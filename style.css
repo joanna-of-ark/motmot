@@ -81,8 +81,8 @@ body {
 #sushi {
   z-index: 6000;
   position: absolute;
-  bottom: 190px;   /* adjust sushi placement */
-  left: 150px;
+  bottom: 5%;   /* adjust sushi placement */
+  left: 20%;
   width: 10%;
   height: auto;
   padding: 0;
@@ -182,4 +182,5 @@ body {
   align-items: center;
 
 }
+
 
