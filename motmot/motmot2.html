@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday !! 😍🥀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro"></div>
+
+  <div id="tk"><div class="sushi">
+    <button id="sushi">
+      <img src="sushi.jpeg" alt="sushi">
+     </button>
+  </div></div>
+  <div class="music">
+    <div class="song">
+    <p style="background-color: white;">NOW PLAYING:
+      Mazzy Star - Fade Into You
+    </p>
+    <audio controls>
+      <source src="Mazzy Star - Fade Into You.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br/>
+    </div> 
+  </div>
+  <div id="home">
+    <h1>🎉 Happy Motmot, Bebe !! 🎂</h1>
+    <h3>
+      Sorry at IT student ang pinili mo at website lang ang gift ko sayo. <br/>
+      Sana ABM nlng pinili mo at baka gift ay activities done AHAHAHAHAHA <br/>
+      or mas better, bnigyan ka ng pera. 🙀 <br/><br/>
+      On a serious note, I can’t be more joyful and grateful <br/>
+      that you chose me. 🥹If I'm being honest with you, I'm surprised yet so appreciative of how you're able to tolerate me and our state right now in our relationship. I miss you. It's so unfortunate that we also aren't able to meet often when you're in Batangas/Quezon because of conflicts, schedules, and just straight-up unavailability. I'm sorry I can't be there to comfort you when you cry about missing me in Manila. I'm sorry that I'm quick to upset and often become avoidant or quiet. Thank you for staying with me through it all, even back when we first met. It's an honour to be the lucky guy able to celebrate a day like this with you. We've made so many memories in the past as friends, but I know we can make even more in the present. <br/>
+      Labyuuu. Enjoy my gift. ^^
+    </h3>
+  <div class="button-row">
+  <div class="flower">
+    <button id="flower">
+      <img src="flower.jpeg" alt="Flower">
+     </button>
+  </div>
+  <div class="kero">
+    <button id="kero">
+      <img  src="kero.jpeg"/>
+    </button>
+  </div></div></div>
+  <div class="spotify">
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5EP8qL8rIQhGu7rmAbfct1?utm_source=generator" width="600px" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  
+
+
+  <script>
+    
+    const intro = document.getElementById("intro");
+    const home = document.getElementById("home");
+    const music = document.querySelector(".music");
+    const flower = document.querySelector(".flower");
+    const kero = document.querySelector(".kero");
+    const spotify = document.querySelector(".spotify");
+    const tk = document.getElementById("tk");
+    const sushi = document.getElementById("sushi");
+
+    // hide msg n music
+    home.style.display = "none";
+    flower.style.display = "none";
+    kero.style.display = "none"; 
+    music.style.display = "none";
+    spotify.style.display = "none";
+    tk.style.display = "none";
+    sushi.style.display = "none";
+
+    intro.addEventListener("click", () => {
+      intro.style.display = "none"; // hide box
+      home.style.display = "block";   // show msg n music
+      flower.style.display = "block";
+      kero.style.display = "block"; 
+      music.style.display = "block"; 
+      spotify.style.display = "none";
+      tk.style.display = "none";
+      sushi.style.display = "none";
+    });
+
+    kero.addEventListener("click", () => {
+      spotify.style.display = "block";
+    });
+
+    flower.addEventListener("click", () => {
+      alert('To leave, let\' take a bite! ^^')
+      tk.style.display = "block";
+      home.style.display = "none";
+      flower.style.display = "none";
+      kero.style.display = "none"; 
+      music.style.display = "none";
+      spotify.style.display = "none";
+      sushi.style.display = "block";
+    });
+
+    sushi.addEventListener("click", () => {
+      tk.style.display = "none";
+      home.style.display = "block";   // show msg n music
+      flower.style.display = "block";
+      kero.style.display = "block"; 
+      music.style.display = "block"; 
+      spotify.style.display = "none";
+      sushi.style.display = "none";
+    });
+  </script>
+</body>
+</html>
