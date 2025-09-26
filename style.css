@@ -83,7 +83,7 @@ body {
   position: absolute;
   bottom: 190px;   /* adjust sushi placement */
   left: 150px;
-  width: 200px;
+  width: 150px;
   height: auto;
   padding: 0;
   border: none;
@@ -181,4 +181,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
