@@ -93,6 +93,7 @@ body {
 }
 
 #sushi img {
+  bottom: 20%;
   position: absolute;
   height: auto;
   border-radius: 10px; /* optional for style */
@@ -183,6 +184,7 @@ body {
   align-items: center;
 
 }
+
 
 
 
