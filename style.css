@@ -83,7 +83,7 @@ body {
   position: absolute;
   bottom: 190px;   /* adjust sushi placement */
   left: 150px;
-  width: 150px;
+  width: 10%;
   height: auto;
   padding: 0;
   border: none;
@@ -93,7 +93,6 @@ body {
 
 #sushi img {
   position: absolute;
-  width: 100%;
   height: auto;
   border-radius: 10px; /* optional for style */
 }
@@ -183,3 +182,4 @@ body {
   align-items: center;
 
 }
+
