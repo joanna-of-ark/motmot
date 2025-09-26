@@ -1,0 +1,184 @@
+body {
+  background-color: pink;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* stack from the top */
+  align-items: center;
+  min-height: 200vh; /* fill screen, but not forced double */
+  margin: 0;
+  padding: 0;
+}
+
+
+#intro {
+  background-image: url('motmot2.png');
+  position: fixed;   /* lock it to the screen */
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;   /* full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#intro:hover {
+  transform: scale(1.1);
+}
+
+#tk {
+   background-image: url('tuxedoroppi.jpeg');
+  position: fixed;   /* lock it to the screen */
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;   /* full height */
+  object-fit: cover; 
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#tk img {
+  width: 100%;       /* stretch to fit width */
+  height: 100%;      /* stretch to fit height */
+  object-fit: cover; /* cover screen without distortion */
+}
+
+#home {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 600px;
+}
+
+#home h1 {
+  color: #d81b60;
+  margin-bottom: 20px;
+}
+
+#home h3 {
+  color: #333;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+#sushi {
+  z-index: 6000;
+  position: absolute;
+  bottom: 190px;   /* adjust sushi placement */
+  left: 150px;
+  width: 200px;
+  height: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#sushi img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional for style */
+}
+
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  margin-top: 20px;
+}
+
+#flower {
+  justify-content: space-between;
+  width: 200px;  
+  height: 200px;
+  padding: 0;    
+  border: none;   
+  background: none; 
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-content: start;
+}
+
+.flower{
+  background-color: transparent;
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+#kero {
+  justify-content: space-between;
+  width: 200px;  
+  height: 200px;
+  padding: 0;    
+  border: none;   
+  background: none; 
+  cursor: pointer;
+}
+
+.kero{
+  background-color: transparent;
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+.flower, .kero {
+  display: inline-block;   /* keeps them side by side */
+  margin: 10px;
+  vertical-align: middle;  /* keeps them aligned */
+}
+.flower img, .kero img {
+  width: 100%;  /* adjust size */
+  height: auto;
+}
+
+.song{
+  justify-content: center;
+  text-align: center;
+  display: block;
+  width: 350px;
+  margin-top: 20px; margin-bottom: 20px;
+  margin-left: 20px; margin-right: 20px;
+  padding-top: 20px; padding-bottom: 20px;
+  padding-left: 20px; padding-right: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.music {
+  position: relative;
+   background-position: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotify {
+  background-position: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
