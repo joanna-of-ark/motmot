@@ -81,7 +81,7 @@ body {
 #sushi {
   z-index: 6000;
   position: absolute;
-  bottom: 20%;
+  bottom: 0%;
   left: 19%;
   width: 10%;
   height: auto;
@@ -93,8 +93,8 @@ body {
 }
 
 #sushi img {
-  left: 19%;
-  bottom: 20%;
+  left: 30%;
+  bottom: 10%;
   position: absolute;
   height: auto;
   border-radius: 10px; /* optional for style */
@@ -185,6 +185,7 @@ body {
   align-items: center;
 
 }
+
 
 
 
